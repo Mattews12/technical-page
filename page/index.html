@@ -346,7 +346,19 @@
         </section>
         <section class='main-section' id='Importing'>
             <header>Importing</header>
-            <article></article>
+            <article>
+                <p>External libraries are used with the import [libname] keyword. You can also use from [libname] import
+                    [funcname] for individual functions. Here is an example:
+                </p>
+                <code>
+                mport random
+                from time import clock
+
+                randomint = random.randint(1, 100)
+                >>> print(randomint)
+                64
+            </code>
+            </article>
         </section>
         <section class='main-section' id='File_I/O'>
             <header>File I/O</header>
