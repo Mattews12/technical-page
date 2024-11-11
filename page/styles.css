@@ -11,3 +11,7 @@ code {
     margin: 10px;
     border-radius: 5px;
   }
+
+  .dark {
+    font-weight: 600;
+  }
