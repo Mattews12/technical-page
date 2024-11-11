@@ -128,7 +128,37 @@
         <section class='main-section' id='Meta_element'>
             <header>Strings</header>
             <article>
+                <p>
+                    Its strings can use either single or double quotation marks, and you can have quotation marks of one
+                    kind inside a string that uses the other kind (i.e. “He said ’hello’.” is valid). Multiline strings
+                    are enclosed in _triple double (or single) quotes_ (“”“). Python strings are always Unicode, but
+                    there is another string type that is pure bytes. Those are called bytestrings and are represented
+                    with the b prefix, for example b'Hello \xce\xb1'. . To fill a string with values, you use the %
+                    (modulo) operator and a tuple. Each %s gets replaced with an item from the tuple, left to right, and
+                    you can also use dictionary substitutions, like so:
+                </p>
+                <code>
+                >>> print("Name: %s\
+                Number: %s\
+                String: %s" % (myclass.name, 3, 3 * "-"))
+                Name: Stavros
+                Number: 3
+                String: ---
 
+                strString = """This is
+                a multiline
+                string."""
+
+                # WARNING: Watch out for the trailing s in "%(key)s".
+                >>> print("This %(verb)s a %(noun)s." % {"noun": "test", "verb": "is"})
+                This is a test.
+
+                >>> name = "Stavros"
+                >>> "Hello, {}!".format(name)
+                Hello, Stavros!
+                >>> print(f"Hello, {name}!")
+                Hello, Stavros!
+            </code>
             </article>
         </section>
         <section class='main-section' id='Flow_control_statements'>
