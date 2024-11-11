@@ -395,7 +395,63 @@
         </section>
         <section class='main-section' id='Miscellaneous'>
             <header>Miscellaneous</header>
-            <article></article>
+            <article>
+                <ul>
+                    <li>Conditions can be chained: 1 < a < 3 checks that a is both less than 3 and greater than 1. </li>
+                    <li>You can use del to delete variables or items in arrays.</li>
+                    <li>List comprehensions provide a powerful way to create and manipulate lists. They consist of an
+                        expression followed by a for clause followed by zero or more if or for clauses, like so:</li>
+                </ul>
+                <code>
+                >>> lst1 = [1, 2, 3]
+                >>> lst2 = [3, 4, 5]
+                >>> print([x * y for x in lst1 for y in lst2])
+                [3, 4, 5, 6, 8, 10, 9, 12, 15]
+                >>> print([x for x in lst1 if 4 > x > 1])
+                [2, 3]
+                # Check if a condition is true for any items.
+                # "any" returns true if any item in the list is true.
+                >>> any([i % 3 for i in [3, 3, 4, 4, 3]])
+                True
+                # This is because 4 % 3 = 1, and 1 is true, so any()
+                # returns True.
+
+                # Check for how many items a condition is true.
+                >>> sum(1 for i in [3, 3, 4, 4, 3] if i == 4)
+                2
+                >>> del lst1[0]
+                >>> print(lst1)
+                [2, 3]
+                >>> del lst1
+            </code>
+                <ul>
+                    <li>Global variables are declared outside of functions and can be read without any special
+                        declarations, but if you want to write to them you must declare them at the beginning of the
+                        function with the global keyword, otherwise Python will bind that object to a new local variable
+                        (be careful of that, it’s a small catch that can get you if you don’t know it). For example:
+                    </li>
+                </ul>
+                <code>
+                number = 5
+
+                def myfunc():
+                # This will print 5.
+                print(number)
+
+                def anotherfunc():
+                # This raises an exception because the variable has not
+                # been bound before printing. Python knows that it an
+                # object will be bound to it later and creates a new, local
+                # object instead of accessing the global one.
+                print(number)
+                number = 3
+
+                def yetanotherfunc():
+                global number
+                # This will correctly change the global.
+                number = 3
+            </code>
+            </article>
         </section>
         <section class='main-section' id='Epilogue'>
             <header>Epilogue</header>
