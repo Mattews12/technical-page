@@ -90,7 +90,8 @@
             <article>
                 <p>
                     The data structures available in python are lists, tuples and dictionaries. Sets are available in
-                    the sets library (but are built-in in Python 2.5 and later). Lists are like one-dimensional arrays
+                    the <span class="gray">sets</span> library (but are built-in in Python 2.5 and later). Lists are
+                    like one-dimensional arrays
                     (but you can also have lists of other lists), dictionaries are associative arrays (a.k.a. hash
                     tables) and tuples are immutable one-dimensional arrays (Python “arrays” can be of any type, so you
                     can mix e.g. integers, strings, etc in lists/dictionaries/tuples). The index of the first item in
@@ -109,10 +110,14 @@
                 >>> print(myfunction(mylist))
                 3
             </code>
-                <p>You can access array ranges using a colon (:). Leaving the start index empty assumes the first item,
-                    leaving the end index assumes the last item. Indexing is inclusive-exclusive, so specifying [2:10]
-                    will return items [2] (the third item, because of 0-indexing) to [9] (the tenth item), inclusive (8
-                    items). Negative indexes count from the last item backwards (thus -1 is the last item) like so:</p>
+                <p>You can access <span class="dark">array ranges</span> using a colon (:). Leaving the start index
+                    empty assumes the first item,
+                    leaving the end index assumes the last item. Indexing is inclusive-exclusive, so specifying
+                    <span class="gray">[2:10]</span>
+                    will return items <span class="gray">[2]</span> (the third item, because of 0-indexing) to <span
+                        class="gray">[9]</span> (the tenth item), inclusive (8
+                    items). Negative indexes count from the last item backwards (thus -1 is the last item) like so:
+                </p>
                 <code>
                 >>> mylist = ["List item 1", 2, 3.14]
                 >>> print(mylist[:])
