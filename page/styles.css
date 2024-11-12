@@ -15,3 +15,8 @@ code {
   .dark {
     font-weight: 600;
   }
+
+  .gray {
+    color: white; 
+    background-color: gray;
+  }
