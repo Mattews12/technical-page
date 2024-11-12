@@ -223,13 +223,14 @@
         <section class='main-section' id='Functions'>
             <header>Functions</header>
             <article>
-                <p>Functions are declared with the def keyword. Optional arguments are set in the function declaration
-                    after the mandatory arguments by being assigned a default value. For named arguments, the name of
+                <p>Functions are <span class="dark">declared with the</span> <span class="gray">def</span> keyword.
+                    <span class="dark">Optional arguments</span> are set in the function declaration
+                    after the mandatory arguments by being assigned a default value. For <span class="dark">named arguments</span>, the name of
                     the argument is assigned a value. Functions can return a tuple (and using tuple unpacking you can
-                    effectively return multiple values). Lambda functions are ad hoc functions that are comprised of a
-                    single statement. Parameters are passed by reference, but immutable types (tuples, ints, strings,
-                    etc) cannot be changed in the caller by the callee. This is because only the memory location of the
-                    item is passed, and binding another object to a variable discards the old one, so immutable types
+                    effectively return multiple values). <span class='dark'>Lambda functions</span> are ad hoc functions that are comprised of a
+                    single statement. Parameters are passed <span class="dark">by reference</span>, but immutable types (tuples, ints, strings,
+                    etc) cannot be changed in the caller by the callee. This is because <span class="dark">only the memory location of the
+                    item is passed</span>, and <span class="dark">binding another object to a variable discards the old one</span>, so immutable types
                     are replaced. For example:</p>
                 <code>
                     # Same as def funcvar(x): return x + 1
