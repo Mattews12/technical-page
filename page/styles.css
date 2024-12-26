@@ -1,6 +1,10 @@
 html {
   scroll-behavior: smooth;
 }
+#navbar {
+  position: fixed;
+  min-width: 290px;
+}
 code {
     display: block;
     text-align: left;
