@@ -13,9 +13,19 @@ html {
   border-right: solid;
   border-color: black;
 }
+header {
+  color: black;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+
+}
 #navbar a{
   text-decoration: none;
   color: black;
+}
+#navbar li{
+  list-style-type: none;
 }
 
 #main-doc {
