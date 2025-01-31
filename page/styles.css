@@ -98,3 +98,17 @@ code {
     }
 
   }
+
+  @media only screen and (max-width: 400px) {
+    #main-doc {
+      margin-left: -10px;
+    }
+    code {
+      width: 100%;
+      margin-left: -20px;
+      padding: 15px; 
+      padding-left: 10px;
+      padding-right: 45px;
+      min-width: 233px;
+    }
+  }
